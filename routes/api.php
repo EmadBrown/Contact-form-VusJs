@@ -19,10 +19,12 @@ Route::group(['middleware' => 'api'], function(){
    Route::get('contact/{id}', 'ContactController@singleContact');
    Route::post('contact/store', 'ContactController@addContact');
    Route::patch('contact/{id}', 'ContactController@updateContact');
-   Route::patch('delete/{id}', 'ContactController@delete');
+   Route::delete('delete/{id}', 'ContactController@delete');
 });
 
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+ 

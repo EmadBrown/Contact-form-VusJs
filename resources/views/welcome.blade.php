@@ -9,6 +9,7 @@
   <body>
     <div class="container">
         <div id="app">
+          @include('include.messages')
           <contact></contact>
         </div>
     </div>

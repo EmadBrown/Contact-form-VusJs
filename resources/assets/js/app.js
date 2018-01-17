@@ -9,6 +9,8 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+let axios = require('axios');
+
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('contact', require('./components/Contact.vue'));
 
